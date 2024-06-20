@@ -14,12 +14,12 @@ function App() {
         `https://api.openweathermap.org/data/2.5/weather?q=${city},${country_code}&appid=${api_key}&units=metric`
       );
 
-      console.log(res.data);
+   
       setWeather(res.data);
       setTown(city);
     } catch (error) {
       console.log(error);
-      console.log("Error");
+     
     }
   };
   useEffect(() => {
