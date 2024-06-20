@@ -11,7 +11,7 @@ function App() {
   const fetchdata = async () => {
     try {
       const res = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country_code}&appid=${api_key}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city},${country_code}&appid=${api_key}&units=metric`
       );
 
       console.log(res.data);
