@@ -38,8 +38,8 @@ function App() {
             </span>
           </div>
         </div>
-        <div className="flex justify-around">
-          <div className="w-full md:w-1/3 min-h-[70vh] flex justify-center items-center">
+        <div className="flex justify-around flex-col md:flex-row gap-2 mt-5">
+          <div className="w-full md:w-1/3 md:min-h-[70vh] flex justify-center items-center">
             <div
               className="search-box text-black flex flex-col gap-4 justify-center items-center 
             bg-[#f1f1f1] p-6 rounded-3xl shadow-lg w-full md:w-1/2 h-1/2 backdrop-filter backdrop-blur-lg bg-opacity-20       
@@ -76,7 +76,7 @@ function App() {
               </button>
             </div>
           </div>
-          <div className="w-full md:w-1/3 min-h-[70vh] flex justify-center items-center">
+          <div className="w-full md:w-1/3 md:min-h-[70vh] flex justify-center items-center">
             <div
               className="weather-box text-black
             bg-[#f1f1f1] p-6 rounded-3xl shadow-lg w-full md:w-1/2 min-h-1/2 backdrop-filter backdrop-blur-lg bg-opacity-20
