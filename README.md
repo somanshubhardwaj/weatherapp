@@ -1,30 +1,60 @@
-# React + TypeScript + Vite
+# WeatherApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WeatherApp is a simple, yet powerful React application that provides real-time weather information for any city around the globe. Utilizing the OpenWeatherMap API, it displays current weather conditions, including temperature, humidity, wind speed, and more.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search by City and Country:** Easily find the weather for your city by typing the city name and selecting the country from a dropdown list.
+- **Real-Time Weather Data:** Displays current weather conditions such as temperature, weather status (e.g., Cloudy, Sunny), feels like temperature, wind conditions, humidity, and cloudiness.
+- **Additional Weather Details:** Provides more detailed weather information like pressure, sunrise and sunset times, visibility, minimum and maximum temperatures, and geographical coordinates (latitude and longitude).
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React.js
+- Axios for API requests
+- OpenWeatherMap API for fetching weather data
+- Tailwind CSS for styling
+- React Icons for weather icons
+- daizyui for the dropdown component
+- TypeScript for type checking
+- Vite for build tooling
+- ESLint and Prettier for code formatting
 
-- Configure the top-level `parserOptions` property like this:
+## Setup
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/WeatherApp.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Change the directory:
+
+```bash
+cd WeatherApp
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open your browser and go to `http://localhost:3000` to view the app.
+
+
+### API Key
+
+The application requires an API key from OpenWeatherMap. You can obtain it by signing up at OpenWeatherMap and replacing the api_key variable in the App.tsx file with your own API key.
+
+### Contributing
+
+Contributions are welcome! If you have a feature request or bug report, please open a new issue on the GitHub repository.
