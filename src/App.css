@@ -1,0 +1,4 @@
+body{
+    background: linear-gradient(to bottom , rgba(0, 0, 0, 0.51) ,rgba(0, 0, 0, 0.099)),url("./bg.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+}
